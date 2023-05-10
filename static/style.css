@@ -1,0 +1,98 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #0b3b6c;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #b9d9eb;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+p.instructions {
+  font-size: 1.2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form * {
+  margin: 15px;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+.label-and-input {
+  display: flex;
+  align-items: baseline;
+}
+
+.label-and-input label {
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.label-and-input input {
+  flex: 1;
+  max-width: 200px;
+}
+
+button {
+  background-color: #0b3b6c;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.convert {
+  height: 50px;
+  width: 150px;
+}
+
+button.back {
+  height: 50px;
+  width: 250px;
+  text-decoration: none;
+}
+
+button a {
+  text-decoration: none;
+  color: #002244;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+p.result-intro {
+  font-size: 2rem;
+}
+
+span.result {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.msg {
+  background-color: rgb(136, 32, 32);
+  color: white;
+  font-size: 1.2rem;
+  padding: 20px;
+  width: 100%;
+}

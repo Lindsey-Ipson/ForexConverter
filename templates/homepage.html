@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Foreign Exchange Converter {% endblock %}
+
+{% block content %}
+
+<h1>Foreign Exchange Converter</h1>
+
+<p class="instructions">Please enter two three-letter currency codes (i.e., USD/EUR/GBP) and an amount to convert.</p>
+
+<form method="GET" action="/result">
+    <div class="label-and-input">
+        <label for="from-curr">Converting from:</label>
+        <input name="from-curr" pattern="[A-Za-z]{3}" title="Please enter a valid 3-letter currency code" required>
+    </div>
+    <div class="label-and-input">
+        <label for="to-curr">Converting to:</label>
+        <input name="to-curr" pattern="[A-Za-z]{3}" title="Please enter a valid 3-letter currency code" required>
+    </div>
+    <div class="label-and-input">
+        <label for="amount">Amount:</label>
+        <input name="amount" type="number" min="0" step=".01" required>
+    </div>
+    <button class="convert">Convert</button>
+</form>
+
+
+{% endblock %}

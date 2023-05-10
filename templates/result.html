@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} Your Result {% endblock %}
+
+{% block content %}
+
+<p class="result-intro">Your result is: <span class=result>{{curr_symbol}}{{result}}</span></p>
+
+<button class="back"><a href="/"> Back to Homepage </a></button>
+
+{% endblock %}
