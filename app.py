@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, flash, jsonify, session, redirect
+from flask import Flask, request, render_template, flash, redirect
 from flask_debugtoolbar import DebugToolbarExtension
 import requests
 from babel import numbers
@@ -20,7 +20,7 @@ def showHomepage():
 @app.route('/result')
 def showResult():
     """Display the conversion result from user's input, or redirect to the homepage with a flash message telling the user what went wrong"""
-    
+
     from_curr = request.args.get('from-curr').upper()
     to_curr = request.args.get('to-curr').upper()
     amount = request.args.get('amount')
